@@ -101,6 +101,7 @@
     background: #fff;
     padding: 70px 0;
     color: #333;
+    min-width: 1200px;    
 }
 .part-two .title{
     font-size: 30px;
@@ -125,6 +126,7 @@
     width: 100%;
     background: #f4f4f4;
     padding: 70px 0;
+    min-width: 1200px;    
 }
 .part-three ul{
     overflow: hidden;
@@ -154,6 +156,7 @@
     width: 100%;
     background: #fff;
     padding: 20px 0 70px;
+    min-width: 1200px;    
 }
 .part-four .item{
     margin-top: 60px;
@@ -177,6 +180,7 @@
     width: 100%;
     background: #f4f4f4;
     padding: 70px 0;
+    min-width: 1200px;    
 }
 .part-five .title{
     font-size: 30px;
@@ -213,6 +217,7 @@
     width: 100%;
     background: #fff;
     padding: 70px 0 50px;
+    min-width: 1200px;    
 }
 .part-six .title{
     font-size: 30px;
