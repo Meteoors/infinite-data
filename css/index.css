@@ -1,0 +1,237 @@
+/* 动画 */
+@keyframes left-in{
+    from {left: -1000px;}
+    to {left: 0;}
+}
+
+@keyframes right-in{
+    from {right: -2000px;}
+    to {right: 0;}
+}
+
+@keyframes bottom-in{
+    from {bottom: -200px;}
+    to {bottom: 0;}
+}
+
+@keyframes slide-down{
+    from {transform: translateY(-40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes img-left-in{
+    from {transform: translateX(-40px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes img-right-in{
+    from {transform: translateX(40px); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+
+.animation{
+    animation: slide-down .7s ease-out;
+}
+.img-left-in{
+    animation: img-left-in .5s ease-out;
+}
+.img-right-in{
+    animation: img-right-in .5s ease-out;
+}
+
+/* 第一部分 */
+.part-one{
+    min-width: 1200px;
+    height: 580px;
+    width: 100%;
+    background: url('../images/home/banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+.info{
+    position: absolute;
+    left: 50%;
+    margin-left: -480px;
+    top: 120px;
+}
+.info .title{
+    font-size: 50px;
+    position: relative;
+    animation: left-in .7s ease-out;
+}
+.info .title span{
+    margin-right: 30px;
+    line-height: 140px;
+}
+.info p{
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: right-in .7s ease-out;
+}
+.info .btn{
+    margin-top: 60px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    transition: color .4s, border-color .4s;
+    color: #fff;
+    position: relative;
+    animation: bottom-in .4s ease-out;
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+    animation-fill-mode: backwards;
+}
+.info .btn:hover{
+    color: red;
+    border-color: red;
+    cursor: pointer;
+}
+
+
+/* 第二部分 */
+.part-two{
+    width: 100%;
+    background: #fff;
+    padding: 70px 0;
+    color: #333;
+}
+.part-two .title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.part-two p{
+    line-height: 36px;
+    text-indent: 34px;
+}
+.part-two .foot{
+    text-align: right;
+}
+.part-two .foot img{
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+}
+
+/* 第三部分 */
+.part-three{
+    width: 100%;
+    background: #f4f4f4;
+    padding: 70px 0;
+}
+.part-three ul{
+    overflow: hidden;
+}
+.part-three li{
+    color: #fff;
+    float: left;
+    margin-right: 25px;
+    height: 80px;
+    width: 280px;
+    background: #e95515;
+    padding-top: 19px;
+    box-sizing: border-box;
+}
+.part-three li:nth-of-type(2n){
+    background: #f5a623;
+}
+.part-three li:last-of-type{
+    margin-right: 0;
+}
+.part-three li p{
+    text-align: center;
+}
+
+/* 第四部分 */
+.part-four{
+    width: 100%;
+    background: #fff;
+    padding: 20px 0 70px;
+}
+.part-four .item{
+    margin-top: 60px;
+}
+.part-four .item p{
+    text-align: center;
+}
+.part-four .item p:nth-child(2){
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.part-four .item p:nth-child(3){
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* 第五部分 */
+.part-five{
+    width: 100%;
+    background: #f4f4f4;
+    padding: 70px 0;
+}
+.part-five .title{
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+.part-five ul{
+    padding: 15px 95px;
+    overflow: hidden;
+}
+.part-five li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
+}
+.part-five li:last-child{
+    margin-right: 0;
+}
+.part-five img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+.part-five img:hover{
+    transform: scale(1.1);
+}
+
+
+/* 第六部分 */
+.part-six{
+    width: 100%;
+    background: #fff;
+    padding: 70px 0 50px;
+}
+.part-six .title{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+    text-align: center;
+}
+.part-six ul{
+    padding: 0 50px;
+    overflow: hidden;
+}
+.part-six li{
+    float: left;
+    width: 200px;
+    margin: 0 25px 25px 0;
+}
+.part-six li:nth-child(5n){
+    margin-right: 0;
+}
+.part-six img{
+    width: 100%;
+}

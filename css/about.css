@@ -1,0 +1,238 @@
+@keyframes slide-down{
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+@keyframes slide-up{
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.slide-down{
+    animation: slide-down .9s ease-out;
+}
+.slide-up{
+    animation: slide-up .9s ease-out;
+}
+
+/* 二级导航 */
+.sub-nav{
+    width: 100%;
+    background: #f4f4f4;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 78px;
+    text-align: right;
+    padding: 0 100px;
+    z-index: 2;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.nav-container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: 330px;
+    font-size: 0;
+}
+.sub-nav a{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #4e3e3e;
+    font-weight: lighter;
+}
+.sub-nav .active{
+    color: #d74c35;
+}
+
+.part{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 60px 0;
+    min-width: 1200px;
+}
+.part .title{
+    font-size: 30px;
+    color: #333;
+    font-weight: lighter;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.part .text{
+    color: #333;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+
+/* 第一部分 */
+.part-one{
+    padding-top: 198px;
+    margin-top: 0;
+}
+
+/* 第二部分 */
+.part-two{
+    background: #f4f4f4;
+}
+.part-two .title{
+    margin-bottom: 36px;
+}
+.part-two .item{
+    margin-bottom: 60px;
+}
+.part-two .item:last-child{
+    margin-bottom: 0;
+}
+.part-two .name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+}
+.part-two .position{
+    font-size: 16px;
+    color: #eb6100;
+    margin-left: 28px;
+}
+.part-two .info{
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+
+/* 第三部分 */
+.part-three .intro{
+    width: 30%;
+    height: 148px;
+    padding: 60px 40px 0;
+    margin: 20px auto 0;
+    background: #fe5236;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: content-box;
+    font-size: 20px;
+    display: none;
+}
+.part-three .content:nth-child(2){
+    line-height: 32px;
+}
+.part-three .content:last-child{
+    font-size: 18px;
+}
+.part-three .intro.active{
+    display: block;
+}
+.part-three .triangle{
+    width: 0;
+    border-top: 25px solid #fe5236;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin: 0 auto;
+}
+.part-three .time-bar{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.part-three .time-bar li{
+    display: inline-block;
+}
+.part-three .time-bar .year{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    background: #999;
+    cursor: pointer;
+    line-height: 50px;
+}
+.part-three .time-bar .active{
+    background: #fe5236;
+}
+.part-three img{
+    margin: 0 30px;
+}
+
+/* 第四部分 */
+.part-four{
+    background: url(../images/about/about-part3-bg2.jpg);
+    background-size: cover;
+    font-size: 30px;
+    color: #fff;
+}
+.part-four .slogan{
+    font-weight: lighter;
+    margin: 60px auto;
+}
+
+
+/* 第五部分 */
+.part-five{
+    background: #f4f4f4;
+    padding: 70px 0;
+}
+.part-five span{
+    margin-right: 40px;
+    color: rgb(254, 82, 54);
+}
+.part-five span:last-child{
+    margin-right: 0;
+}
+
+/* 第六部分 */
+.part-six .bold{
+    font-weight: normal;
+}
+.part-six .text{
+    line-height: 32px;
+}
+.part-six span{
+    color: rgb(254, 82, 54);
+    margin-right: 40px;
+}
+.part-six .culture{
+    margin: 20px 0;
+}
+.part-six span:last-child{
+    margin-right: 0;
+}
+.part-six .item{
+    width: 1000px;
+    margin: 30px auto 40px;
+    border: 1px dotted #ccc;
+    padding: 40px 40px 0 40px;
+    box-sizing: content-box;
+    border-radius: 6px;
+}
+.part-six .item:last-child{
+    margin-bottom: 10px;
+}
+.part-six .item .title{
+    position: relative;
+    top: -3px;
+}
+.part-six .item .text{
+    margin-bottom: 32px;
+    line-height: 28px;
+}
+.part-six .item .container{
+    padding: 0 75px;
+    position: relative;
+}
+.part-six .prev{
+    position: absolute;
+    top: 222px;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.part-six .next{
+    position: absolute;
+    top: 222px;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}

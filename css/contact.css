@@ -1,0 +1,133 @@
+@keyframes slide-down{
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+@keyframes slide-up{
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;};
+}
+
+/* 第一部分 */
+.part-one{
+    padding: 120px 0 60px;
+    min-width: 1200px;
+}
+.part-one .wrapper{
+    animation: slide-down .8s ease-out;
+}
+.part-one .left, .part-one .right{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 15px;
+}
+.part-one .left p{
+    margin-bottom: 30px;
+}
+.part-one input{
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+}
+.part-one .row-one{
+    display: flex;
+    justify-content: space-between;
+}
+.part-one .row-one input{
+    width: 30%;
+}
+.part-one textarea{
+    padding-top: 10px;
+    width: 100%;
+    height: 180px;
+}
+.part-one button{
+    width: 100%;
+    text-align: center;
+    background: #eb6100;
+    color: #fff;
+    line-height: 45px;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.part-one .right .info{
+    font-size: 14px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.part-one .info i{
+    float: left;
+    width: 30px;
+    padding-top: 6px;
+}
+.part-one .info .detail{
+    float: left;
+    font-weight: lighter;
+    line-height: 30px;
+    color: #333;    
+}
+
+.map{
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    width: 500px;
+    height: 400px;
+    z-index: 1;
+    display: none;
+}
+
+
+/* 第二部分 */
+.part-two{
+    padding: 75px 0 60px;
+    background: #f4f4f4;
+    text-align: center;
+    min-width: 1200px;
+}
+.part-two .title{
+    font-size: 30px;
+    font-weight: lighter;
+    animation: slide-up .8s ease-out;
+}
+.part-two .text{
+    margin: 22px 0 35px;
+    animation: slide-up .8s ease-out;    
+}
+.part-two .join{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 16px;
+    animation: slide-down .8s ease-out;
+}
+.part-two .col{
+    width: 375px;
+}
+.part-two .btn{
+    line-height: 70px;
+    background: #eb6100;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.part-two .btn img{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    transform-origin: center top;
+}
+.part-two .intro{
+    background: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 30px;
+    display: none;
+}

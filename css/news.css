@@ -1,0 +1,82 @@
+/* 动画 */
+@keyframes slide-up{
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes slide-down{
+    from {transform: translateY(-20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.main{
+    padding: 130px 0 60px;
+    min-width: 1200px;
+}
+.item{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 60px;
+    overflow: hidden;
+    animation: slide-up .6s ease-out;
+}
+.item .left{
+    float: left;
+    width: 48%;
+    height: 200px;
+    padding-top: 4px;
+}
+.item .left img{
+    height: 100%;
+    cursor: pointer;
+}
+.item .right{
+    float: left;
+    width: 52%;
+}
+.item .right .title{
+    margin-bottom: 2px;
+    line-height: 30px;
+    font-size: 19px;
+    color: #333;
+    transition: color .3s;
+}
+.item .title:hover{
+    color: #eb6100;
+    cursor: pointer;
+}
+.item p{
+    font-size: 13px;
+    line-height: 32px;
+    color: #666;
+}
+.item .btn{
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 38px;
+    color: #eb6100;
+    border: 1px solid #eb6100;
+    display: inline-block;
+    margin-top: 22px;
+    cursor: pointer;
+    transition: background-color .4s, color .4s;
+}
+.item .btn:hover{
+    background: #eb6100;
+    color: #fff;
+    transition: background-color .4s, color .4s;    
+}
+
+.load{
+    width: 960px;
+    margin: 0 auto;
+    color: #adadad;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: lighter;
+    cursor: pointer;
+    animation: slide-down .6s ease-out;
+}

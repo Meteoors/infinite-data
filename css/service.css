@@ -1,0 +1,171 @@
+@keyframes left-in{
+    from {transform: translateX(-1000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes right-in{
+    from {transform: translateX(1000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes slide-up{
+    from {transform: translateY(50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes slide-down{
+    from {transform: translateY(-40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.animation{
+    animation: slide-down .4s ease-out;
+}
+
+.part{
+    text-align: center;
+    padding: 70px 0 75px;
+    width: 100%;
+    background: #fff;
+    color: #505050;
+    min-width: 1200px;
+}
+.part .title{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.part .text{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 24px 0;
+}
+
+/* 第一部分 */
+.part-one{
+    padding-top: 130px;
+    overflow: hidden;
+}
+.part-one .title{
+    animation: left-in .7s ease-out;
+}
+.part-one .text{
+    animation: right-in .7s ease-out;
+}
+.part-one ul{
+    display: inline-block;
+}
+.part-one li{
+    float: left;
+    width: 176px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted #ccc;
+    border-radius: 8px;
+    margin-right: 36px;
+    overflow: hidden;
+}
+.part-one li span{
+    color: #f06a19;
+    font-weight: bold;
+    font-size: 19px;
+}
+.part-one li img{
+    width: 22px;
+    margin-right: 10px;
+}
+.part-one li:last-child{
+    margin-right: 0;
+}
+.part-one ul{
+    animation: slide-up .4s ease-out .3s;
+    animation-fill-mode: backwards;
+}
+
+
+/* 第二部分 */
+.part-two{
+    background: #f4f4f4;
+}
+.part-two ul{
+    display: inline-block;
+}
+.part-two li{
+    float: left;
+    margin-right: 40px;
+    width: 216px;
+    height: 62px;
+    background: #70bf41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part-two li p{
+    color: #fff;
+}
+.part-two li:last-child{
+    margin-right: 0;
+}
+.part-two li:nth-child(2){
+    background: #52a7f8;
+}
+.part-two li:nth-child(3){
+    background: #ec6d57;
+}
+.part-two .title, .part-two .text, .part-two ul{
+    animation: slide-down .7s ease-out;
+}
+
+/* 第三部分 */
+.part-three img{
+    width: 400px;
+    margin-top: 8px;
+}
+
+/* 第四部分 */
+.part-four{
+    background: #f4f4f4;
+}
+.part-four img{
+    width: 600px;
+    margin-top: 5px;
+}
+
+/* 第五部分 */
+.part-five .wrapper{
+    text-align: left;
+    padding: 0 50px;
+    display: flex;
+    margin-top: 40px;
+}
+.part-five .title{
+    line-height: 50px;
+}
+.part-five .left{
+    margin-right: 130px;
+    width: 350px;
+    flex: 0 0 350px;
+}
+.part-five h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 38px;
+    color: #505050;
+}
+.part-five .left-li{
+    margin-bottom: 30px;
+}
+.part-five .right-ul{
+    overflow: hidden;
+}
+.part-five .right-li{
+    width: 310px;
+    float: left;
+    margin: 0 0 30px 0;
+}
+.right-li:nth-of-type(2n){
+    margin-right: 0;
+    position: relative;
+    left: 65px;
+}

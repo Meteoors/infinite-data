@@ -1,0 +1,153 @@
+@keyframes left-in{
+    from {transform: translateX(-1000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes slide-up{
+    from {transform: translateY(200px);}
+    to {transform: translateY(0);}
+}
+
+@keyframes slide-down{
+    from {transform: translateY(-40px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+.slide-down{
+    animation: slide-down ease-out .6s;
+    animation-fill-mode: backwards;
+}
+
+.part{
+    text-align: center;
+    padding: 70px 0 75px;
+    width: 100%;
+    background: #fff;
+    color: #505050;
+    min-width: 1200px;
+}
+.part .title{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.part .text{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 24px 0;
+}
+
+/* 第一部分 */
+.part-one{
+    padding-top: 130px;
+}
+.part-one .title{
+    animation: left-in .7s ease-in-out;
+}
+.part-one .wrapper{
+    margin-top: 35px;
+}
+.part-one ul{
+    overflow: hidden;
+    padding-left: 50px;
+}
+.part-one li{
+    float: left;
+    width: 260px;
+    padding: 15px 0;
+    text-align: center;
+    border: 1px dotted #ccc;
+    border-radius: 8px;
+    margin: 0 10px 15px 4px;
+    transform: translateY(200px);
+    animation: slide-up .5s ease-in-out .3s;
+    animation-fill-mode: forwards;
+}
+.part-one img{
+    height: 40px;
+}
+
+
+/* 第二部分 */
+.part-two{
+    background: #f5f5f5;
+}
+.part-two img{
+    margin: 0 35px 0 35px;
+    width: 190px;
+}
+
+/* 第三部分 */
+.part-three li{
+    display: inline-block;
+    padding: 35px;
+    font-size: 14px;
+    margin-right: 20px;
+    border: 1px dotted #ccc;
+}
+.part-three li:last-child{
+    margin: 0;
+}
+.part-three p{
+    margin-bottom: 10px;
+    color: #666;    
+}
+.part-three .item-title{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* 第四部分 */
+.part-four{
+    background: #f5f5f5;
+}
+.part-four .title{
+    margin-bottom: 35px;
+}
+.part-four .item{
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part-four .left{
+    width: 630px;
+    text-align: left;
+    font-size: 14px;    
+}
+.part-four h3{
+    font-size: 21px;
+    margin-bottom: 12px;
+    color: #eb6110;
+}
+.part-four .keyword{
+    color: #999;
+    line-height: 22px;
+}
+.part-four p{
+    color: #333;
+    line-height: 22px;
+}
+.part-four .right{
+    border: 1px solid #f30f7e;
+    padding: 20px;
+    display: flex;
+    width: 175px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    margin-left: 40px;
+}
+.part-four .right img{
+    height: 50px;
+    margin-right: 10px;
+}
+.part-four .load{
+    font-size: 14px;
+    color: #adadad;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
